@@ -1,0 +1,39 @@
+.header {
+  background-color: #6e0085;
+}
+.header h1 {
+  font-size: 48px;
+}
+.help-center-card img {
+  width: 60px;
+}
+.help-center-card {
+  cursor: pointer;
+}
+.help-center-card:hover {
+  background-color: #f0f0f0;
+}
+.title-devider {
+  background-color: #6e0085;
+  height: 2px;
+  width: 40px;
+  margin-top: 12px;
+}
+.help-question-list{
+    list-style: none;
+}
+.help-question-list a{
+    color: black;
+}
+.help-question-list a:hover{
+    color: #6e0085;
+    text-decoration: underline;
+}
+ul.help-question-list li::before {
+  content: "\2022";
+  color: #6e0085;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
