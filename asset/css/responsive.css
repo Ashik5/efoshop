@@ -90,9 +90,9 @@
   .efoshop-menu .card_items {
     margin-right: 10px;
   }
-
-  .d-none {
-    display: none !important;
+  .user-menu {
+    display: none;
+    left: 50%;
   }
 }
 

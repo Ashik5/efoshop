@@ -59,6 +59,7 @@ img {
 }
 
 .user-menu {
+  display: none;
   left: 90%;
   bottom: 50px;
   background: #fff;
