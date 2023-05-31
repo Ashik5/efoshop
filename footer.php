@@ -80,7 +80,8 @@
     const SearchIconsElement = document.querySelector('.searchI');
     const searchButton = document.querySelector('#search_btn');
     const searchElement = document.querySelector('.search-bar');
-
+    const user = document.querySelector('.user');
+    const userElement = document.querySelector('.user-menu');
 
     baritemsClick.addEventListener('click', (e) => {
         e.preventDefault();
@@ -96,6 +97,17 @@
         e.preventDefault();
         if(window.outerWidth<=768){
         searchElement.setAttribute("style", "display:none;");
+        }
+    });
+    user.addEventListener('click', (e) => {
+        e.preventDefault();
+        const display = getComputedStyle(userElement).display;
+        console.log(display);
+        if(display=="none"){
+            userElement.setAttribute("style","display:block;position:relative;z-index:1");
+        }
+        else{
+            userElement.setAttribute("style","display:none");
         }
     });
     let mainCatagoryElement = document.querySelectorAll('.mainLiList');

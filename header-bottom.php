@@ -1,8 +1,8 @@
 <div class="header-inner">
     <div class="container">
         <div class="cat-nav-head">
-            <div class="row">
-                <div class="col-lg-2">
+            <div class="row justify-content-between">
+                <div class="col-lg-2 main-categories">
                     <div class="all-category">
                         <h3 class="cat-heading">
                             <i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES
@@ -88,5 +88,11 @@
                 </div>
             </div>
         </div>
+        <ul class="user-menu">
+            <li class="mainLiList"><a href="#" class="">login</a></li>
+            <li class="mainLiList"><a href="#" class="">Register</a></li>
+            <li class="mainLiList"><a href="#" class="">Logout</a></li>
+        </ul>
+
     </div>
 </div>
