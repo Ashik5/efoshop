@@ -1,0 +1,165 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6e0085;
+}
+
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.efoshop-page {
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.efoshop-header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(8, 7, 6, .1);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+/******************** menubar **************/
+.efoshop-menubar {
+    width: 90%;
+    padding: 10px 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: .6fr 3fr auto;
+    max-width: 1440px;
+}
+
+.efoshop-menubar img {
+    width: 100%;
+    min-width: 128px;
+    max-width: 175px;
+}
+
+.efoshop-menubar .search-field input {
+    width: 45%;
+    border: 2px solid #6e0085;
+    padding: 5px 0 5px 15px;
+    border-radius: 20px 0 0 20px;
+}
+
+.efoshop-menubar .search-field input:focus {
+    outline: #6e0085;
+    border: 3px solid rgb(110, 0, 133, 0.5);
+}
+
+.efoshop-menubar .search-field button {
+    border: none;
+    text-align: center;
+    background: #6e0085;
+    color: white;
+    padding: 5px 15px;
+    border: 2px solid #6e0085;
+    border-radius: 0 20px 20px 0;
+}
+
+.efoshop-menubar .menu-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px
+}
+
+/*************** mobile version hidden ****************/
+
+@media only screen and (min-width: 480px) {
+    .efoshop-mobile-searchbar {
+        display: none !important;
+    }
+  }
+.menu-options a:nth-child(1), a:nth-child(5) {
+    display: none;
+}
+
+/*************** user menu ***********************/
+.user-menu {
+    width: 90%;
+    display: none;
+    flex-direction: row;
+    justify-content: end;
+    position: fixed;
+    top: 85px;
+    
+}
+
+.user-menu-options {
+    padding: 10px 20px;
+    width: fit-content;
+    background: white;
+    box-shadow: 0 0 5px rgba(8, 7, 6, .1);
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-transform: uppercase;
+}
+
+/************* Responsive ************************/
+@media screen and (max-width:480px) {
+    .efoshop-menubar .search-field {
+        display: none;
+    }
+
+    .efoshop-mobile-searchbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .efoshop-mobile-searchbar input {
+        width: 60%;
+        border: 2px solid #6e0085;
+        padding: 5px 0 5px 15px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .efoshop-mobile-searchbar input:focus {
+        outline: #6e0085;
+        border: 3px solid rgb(110, 0, 133, 0.5);
+    }
+
+    .menu-options a:nth-child(1), a:nth-child(5) {
+        display: block;
+    }
+
+    .menu-options a:not(:nth-child(1), :nth-child(4), :nth-child(5)) {
+        display: none;
+    }
+
+    .efoshop-mobile-searchbar button {
+        border: none;
+        text-align: center;
+        background: #6e0085;
+        color: white;
+        padding: 5px 15px;
+        border: 2px solid #6e0085;
+        border-radius: 0 20px 20px 0;
+    }
+}

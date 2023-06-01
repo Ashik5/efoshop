@@ -1,12 +1,6 @@
 @media screen and (min-width: 1020px) {
-
-  .Search-icon,
-  .bars {
-    display: none;
-  }
-
   .header-inner {
-    height: 500px;
+    height: 300px;
     transition: all 0.5s ease;
   }
 }
@@ -22,22 +16,6 @@
   .top_Selling {
     margin-top: 60px !important;
   }
-
-  .search-bar {
-    position: absolute;
-    top: 80px;
-    /* opacity: 0;
-    pointer-events: none;
-    visibility: hidden; */
-    transition: all 0.5s ease;
-  }
-
-  .search-bar.active {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
-
   .header-inner {
     height: 0px;
     transition: all 0.5s ease;
@@ -78,22 +56,6 @@
     justify-content: center;
     gap: 8px;
   }
-
-  .efoshop-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  }
-
-  .efoshop-menu .card_items {
-    margin-right: 10px;
-  }
-  .user-menu {
-    display: none;
-    left: 50%;
-  }
 }
 
 @media screen and (max-width: 540px) {
@@ -109,47 +71,8 @@
     margin-top: 0.5rem;
     margin: bottom 1rem;
   }
-
-  #landingPage .search-bar {
-    display: none;
-  }
-
-  /* .top-header_items ul li:nth-child(1) {
-    display: none;
-  }
-  .top-header_items ul li:nth-child(2) {
-    display: none;
-  }
-  .top-header_items ul li:nth-child(3) {
-    display: none;
-  }
-  .top-header_items ul li:nth-child(4) {
-    display: none;
-  }
-  .top-header_items ul li:nth-child(5) {
-    display: none;
-  }
-  .top-header_items ul li:nth-child(6) {
-    display: none;
-  } */
-
   .brand-logo .logo_image {
     max-width: 120px;
-  }
-
-  .search-bar {
-    position: absolute;
-    top: 70px;
-    /* opacity: 0;
-    pointer-events: none;
-    visibility: hidden; */
-    transition: all 0.5s ease;
-  }
-
-  .search-bar.active {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
   }
 
   .card_items .items {

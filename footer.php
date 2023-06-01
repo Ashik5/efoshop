@@ -1,3 +1,5 @@
+</div>
+</div>
 <footer>
     <div class="container">
         <div class="row">
@@ -77,11 +79,8 @@
     const baritemsClick = document.querySelector('.bar-icons');
     const catagoriesElement = document.querySelector('.cat-nav-head');
     const innerHeadingElement = document.querySelector('.header-inner');
-    const SearchIconsElement = document.querySelector('.searchI');
-    const searchButton = document.querySelector('#search_btn');
-    const searchElement = document.querySelector('.search-bar');
     const user = document.querySelector('.user');
-    const userElement = document.querySelector('.user-menu');
+    let mainCatagoryElement = document.querySelectorAll('.mainLiList');
 
     baritemsClick.addEventListener('click', (e) => {
         e.preventDefault();
@@ -93,24 +92,6 @@
             searchElement.classList.remove('active');
         }
     });
-    searchButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        if(window.outerWidth<=768){
-        searchElement.setAttribute("style", "display:none;");
-        }
-    });
-    user.addEventListener('click', (e) => {
-        e.preventDefault();
-        const display = getComputedStyle(userElement).display;
-        console.log(display);
-        if(display=="none"){
-            userElement.setAttribute("style","display:block;position:relative;z-index:1");
-        }
-        else{
-            userElement.setAttribute("style","display:none");
-        }
-    });
-    let mainCatagoryElement = document.querySelectorAll('.mainLiList');
 
     //// FOrLoop
 
