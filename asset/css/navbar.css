@@ -103,6 +103,7 @@ a:hover {
     justify-content: end;
     position: fixed;
     top: 85px;
+    z-index: 999;
     
 }
 
@@ -123,7 +124,10 @@ a:hover {
     .efoshop-menubar .search-field {
         display: none;
     }
-
+    .user-menu {
+        top:70px;
+        
+    }
     .efoshop-mobile-searchbar {
         display: flex;
         flex-direction: row;

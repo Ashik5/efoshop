@@ -22,8 +22,12 @@ img {
 }
 
 .header-inner {
-  margin-top: 6rem;
   transition: all 0.05s ease;
+}
+
+.header-inner .mega-menu-full-section {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
 }
 
 .all-category {
@@ -57,6 +61,7 @@ img {
   margin-right: 15px;
   font-size: 22px;
 }
+
 .main-category {
   position: absolute;
   left: 0;

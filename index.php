@@ -1,5 +1,5 @@
 <?php
-require('header.php');
+require('header-alt.php');
 require_once('header-bottom.php');
 echo '<main>';
 // top Selling product

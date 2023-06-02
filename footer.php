@@ -75,6 +75,7 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="asset/js/main.js"></script>
 <script type="text/javascript">
     const baritemsClick = document.querySelector('.bar-icons');
     const catagoriesElement = document.querySelector('.cat-nav-head');
