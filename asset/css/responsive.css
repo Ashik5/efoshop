@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .mega-menu-full-section{
+    grid-column: auto;
+  }
   body {
     width: 100%;
   }

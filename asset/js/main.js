@@ -43,7 +43,6 @@ searchSubmit.addEventListener('click', (e) => {
 menuBars.addEventListener('click', (e) => {
     e.preventDefault();
     const display = getComputedStyle(meghaMenu).display;
-    console.log("fuck");
     if (display == "none") {
         meghaMenu.setAttribute("style", "display:flex");
     }

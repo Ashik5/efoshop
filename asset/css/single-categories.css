@@ -1,0 +1,209 @@
+.efoshop-subcategories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    box-shadow: 0 0 5px rgba(8, 7, 6, .1);
+    margin-bottom: 10px;
+}
+
+.efoshop-subcategories a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    border: 1px solid rgb(0, 0, 0, 0.08);
+}
+
+.efoshop-subcategories a img {
+    object-fit: cover;
+    padding: 10px;
+    height: 60px;
+    max-width: fit-content;
+}
+
+.efoshop-categories-main-section {
+    display: grid;
+    grid-template-columns: .6fr 3fr;
+    gap: 10px;
+}
+
+.filter-section-header, .product-section-header {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.product-section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-select select {
+    padding: 10px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .8);
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.custom-select select:focus {
+    outline: none;
+}
+
+.custom-select select:hover {
+    cursor: pointer;
+}
+
+.filter-single-section {
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .8);
+
+}
+
+.filter-section-header, .efoshop-breadcum a {
+    color: rgba(110, 0, 133, 0.5);
+}
+
+.efoshop-breadcum {
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.efoshop-breadcum a:nth-last-child(1) {
+    color: gray;
+}
+
+.efoshop-breadcum a:not(:nth-last-child(1))::after {
+    content: '>';
+    margin: 5px;
+}
+
+.filter-single-section input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.filter-single-section input[type="number"]:focus {
+    outline: none;
+}
+
+.filter-single-section:not(:nth-last-child(1)) {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.expand {
+    color: #6e0085;
+    cursor: pointer;
+}
+
+.product-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.efoshop-product {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 90%;
+    margin: 10%;
+}
+
+.efoshop-product:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(8, 7, 6, .1);
+}
+
+.efoshop-product span {
+    font-size: 10px;
+}
+
+.efoshop-product a {
+    font-size: 13px;
+    color: #6e0085;
+}
+
+.efoshop-product p {
+    font-size: 16px;
+    color: rgba(110, 0, 133, .5);
+}
+
+.efoshop-pagination {
+    gap: 5px;
+}
+
+.efoshop-pagination li {
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+.efoshop-pagination .current-page{
+    border: none;
+    color: white;
+    background: #6e0085;
+}
+.efoshop-mobile-filter-button{
+    display: none;
+}
+.close-filter{
+    display: none;
+}
+.filter-button-section{
+    width: auto;
+}
+@media screen and (max-width:768px) {
+    .efoshop-mobile-filter-button{
+        display: block;
+        padding: 5px 15px;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 5px;
+    }
+    .efoshop-categories-main-section{
+        display: block;
+    }
+    .product-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }   
+    .product-section-header{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .efoshop-product {
+        margin: 0;
+        width: 100%;
+    }
+    .efoshop-filter-section{
+        display: none;
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        overflow: scroll;
+        padding: 20px;
+    }
+    .close-filter{
+        display: block;
+    }
+    .filter-button-section{
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .efoshop-filter-section{
+        display: block !important;
+    } 
+}

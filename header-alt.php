@@ -14,14 +14,10 @@
     <link rel="stylesheet" href="asset/css/navbar.css" />
     <link rel="stylesheet" href="asset/css/style.css" />
     <link rel="stylesheet" href="asset/css/main.css" />
+    <link rel="stylesheet" href="asset/css/single-categories.css" />
 
 
 </head>
-<style>
-    main{
-        margin-top:12rem;
-    }
-</style>
 <body>
     <div class="efoshop-page flex-col-center">
         <!--------- header ------------->

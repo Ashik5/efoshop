@@ -1,8 +1,8 @@
 <div class="header-inner">
     <div class="container mega-menu-full-section">
-        <div class="cat-nav-head">
+        <div class="cat-nav-head" style="margin-top: 5rem;">
             <div class="row justify-content-between">
-                <div class="col-lg-2 main-categories">
+                <div class="main-categories">
                     <div class="all-category">
                         <h3 class="cat-heading">
                             <i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES
@@ -88,12 +88,12 @@
                 </div>
             </div>
         </div>
-        <section class="pt-3 pb-3 mt-2 mb-2 top_Selling">
+        <section class="top_Selling">
             <div class="container">
                 <div class="headingflash">
                     <h3>Top Sale</h3>
                 </div>
-                <div class="row g-1 mt-2">
+                <div class="row g-1">
                     <div class="col-xl-2 col-ld-3 col-md-4 col-6">
                         <div class="flash-card">
                             <div class="product_card">
